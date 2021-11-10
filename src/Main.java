@@ -5,6 +5,7 @@ public class Main {
 
         Thread anotherThread = new AnotherThread();
         anotherThread.setName("== Another Thread ==");
+//        anotherThread.run(); it would run from MAIN thread in this case
         anotherThread.start();
 
         new Thread() {
